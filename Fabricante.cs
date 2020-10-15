@@ -3,14 +3,18 @@ using System.Threading;
 
 namespace fabricantevendedor
 {
-    public class Fabricante
+    public class Fabricante //@ionene
     {
         private Almacen _a;
         private Thread _t;
         private Random _rnd = new Random();
-        public Fabricante(Almacen a)
+        private int _ms;
+        private int _capacidad;
+        public Fabricante(Almacen a, int ms, int capacidad)
         {
             this._a = a;
+            this._ms = ms;
+            this._capacidad = capacidad;
         }
 
         public void Fabrica()
