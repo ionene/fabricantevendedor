@@ -4,7 +4,7 @@ namespace fabricantevendedor
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //@ionene
         {
             Console.WriteLine("INICIO");
             Almacen almacen = new Almacen();
