@@ -8,9 +8,13 @@ namespace fabricantevendedor
         private Almacen _a;
         private Thread _t;
         private Random _rnd = new Random();
-        public Vendedor(Almacen a)
+        private int _ms;
+        private int _capacidad;
+        public Vendedor(Almacen a, int ms, int capacidad)
         {
             this._a = a;
+            this._ms = ms;
+            this._capacidad = capacidad;
         }
 
         public void Vende()
